@@ -1,7 +1,7 @@
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 // Adapter:
-import adapter from "@sveltejs/adapter-node";
+import adapter from "@sveltejs/adapter-cloudflare";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,9 +12,9 @@ const config = {
     alias: {
       "@/*": "./src/*",
       "@/lib/*": "./src/lib/*",
-      "content-collections": "./.content-collections/generated",
-    },
-  },
+      "content-collections": "./.content-collections/generated"
+    }
+  }
 };
 
 export default config;
